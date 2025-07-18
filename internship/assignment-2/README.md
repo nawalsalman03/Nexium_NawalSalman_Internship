@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📰 Blog Summariser
 
-## Getting Started
+A modern AI-inspired web app that takes any blog URL, scrapes its content, summarizes it, and provides an Urdu translation — all in seconds.
 
-First, run the development server:
+Built with **Next.js**, **TailwindCSS**, and deployed on **Vercel**. Data is saved to **Supabase** for persistence.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔗 Live Demo
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+👉 [nexium-nawal-salman-internship.vercel.app](https://nexium-nawal-salman-internship.vercel.app/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Try it with real blogs:
 
-## Learn More
+- https://jamesclear.com/focus  
+- https://zenhabits.net/morning/  
+- https://blog.todoist.com/articles/getting-things-done/  
+- https://jamesclear.com/atomic-habits-summary  
+- https://css-tricks.com/snippets/css/complete-guide-grid/  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- ✅ Enter a blog URL and extract its main content
+- ✅ Summarizes using basic logic (first 2 sentences)
+- ✅ Auto-translates English summary to **Urdu** (static dictionary logic)
+- ✅ Saves blog title + summary to **Supabase**
+- ✅ Displays both English and Urdu summaries beautifully
+- ✅ Background video with clean modern UI
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend**: Next.js 14 (App Router), React, TailwindCSS, ShadCN UI
+- **Backend**: Next.js API Routes (`/api/scrape`, `/api/save`)
+- **Database**: Supabase (PostgreSQL)
+- **Deployment**: Vercel
+
+---
+
+## ⚙️ Setup Instructions (Locally)
+
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
+   cd internship/assignment-2
+2. **Install dependencies**
+   ```bash
+   npm install
+3. **Set envionment Variables**
+  create .env.local and add:
+  NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+  NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+4. **Run Locally**
+   ```bash
+  npm run dev
+
+## 🗂️ Folder Structure
+   ```bash
+  internship/
+  └── assignment-2/
+      ├── app/
+      │   ├── api/
+      │   │   ├── scrape/route.js
+      │   │   └── save/route.js
+      │   └── page.js
+      ├── lib/translate.js
+      ├── utils/
+      ├── public/bgvid.mp4
+      ├── styles/
+      ├── .env.local
+      └── tailwind.config.js
+## 💡 Author
+Made with 💻 by Nawal Salman as part of the Nexium Progressive Web Development Internship — blending AI-inspired logic, language translation, and modern full-stack development.
+
+
