@@ -51,28 +51,28 @@ Try it with real blogs:
    npm install
 3. **Set envionment Variables**
   create .env.local and add:
-  NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-  NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+   ```bash
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
 4. **Run Locally**
    ```bash
-  npm run dev
-
-## 🗂️ Folder Structure
-   ```bash
-  internship/
-  └── assignment-2/
-      ├── app/
-      │   ├── api/
-      │   │   ├── scrape/route.js
-      │   │   └── save/route.js
-      │   └── page.js
-      ├── lib/translate.js
-      ├── utils/
-      ├── public/bgvid.mp4
-      ├── styles/
-      ├── .env.local
-      └── tailwind.config.js
+   npm run dev
+   
 ## 💡 Author
 Made with 💻 by Nawal Salman as part of the Nexium Progressive Web Development Internship — blending AI-inspired logic, language translation, and modern full-stack development.
 
-
+## 🗂️ Folder Structure
+   ```bash
+   internship/
+   └── assignment-2/
+       ├── app/
+       │   ├── api/
+       │   │   ├── scrape/route.js
+       │   │   └── save/route.js
+       │   └── page.js
+       ├── lib/translate.js
+       ├── utils/
+       ├── public/bgvid.mp4
+       ├── styles/
+       ├── .env.local
+       └── tailwind.config.js
